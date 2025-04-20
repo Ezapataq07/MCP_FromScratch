@@ -1,0 +1,21 @@
+https://modelcontextprotocol.io/examples
+https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+
+- Open Claude Desktop
+- Settings - Developers - Edit config  and edit the JSON file adding the next:
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/username/Desktop",
+        "/home/ezapataq/GitHub",
+        "/path/to/other/allowed/dir"
+      ]
+    }
+  }
+}
+
+- Then re-open Claude desktop and the MCP tasks will be available

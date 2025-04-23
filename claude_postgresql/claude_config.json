@@ -1,0 +1,21 @@
+{
+    "mcpServers": {
+        "filesystem": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-filesystem",
+            "/home/ezapataq/Downloads",
+            "/home/ezapataq/GitHub"
+          ]
+        },
+        "postgres": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-postgres",
+            "postgresql://ezapataq:3506@localhost:5432/test_db"
+          ]
+        }
+      }
+}
